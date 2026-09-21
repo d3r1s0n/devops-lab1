@@ -3,7 +3,8 @@ import hashlib
 
 def format_message(author: str, text: str) -> str:
     """Форматує рядок повідомлення."""
-    return f">>> {author.upper()} <<<: {text.strip()}"
+
+return f"[{author.upper()}]: {text.strip()}"
 
 
 def compute_sha256(data: str) -> str:
