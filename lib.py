@@ -9,3 +9,7 @@ def format_message(author: str, text: str) -> str:
 def compute_sha256(data: str) -> str:
     """Обчислює хеш SHA-256 від тексту."""
     return hashlib.sha256(data.encode("utf-8")).hexdigest()
+
+def count_characters(text: str) -> int:
+    """Повертає довжину тексту."""
+    return len(text)
